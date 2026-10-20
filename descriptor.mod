@@ -13,4 +13,3 @@ dependencies={
 	"하츠 오브 코리아 Hearts of Korea[Road to 56 호환]"
 }
 supported_version="1.19.*"
-remote_file_id="3370616163"
