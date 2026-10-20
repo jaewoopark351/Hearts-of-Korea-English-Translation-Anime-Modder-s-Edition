@@ -9,7 +9,7 @@
  RULE_GROUP_GOOKPPONG_SETUP:0 "Hearts of Korea Custom Game Rules"
  HOK_RAGNAROK_STATUS:0 "HoK Extreme: RagnaROK §R(Single Player Only)§!"
  RULE_OPTION_DEFAULT_RAGNAROK_DESC:0 "Do not enable RagnaROK mode."
- RAGNAROK_ENABLED_TEXT:0 "Enable RagnaROK [In Development and Testing]"
+ RAGNAROK_ENABLED_TEXT:0 "Enable RagnaROK (In Development and Testing)"
  RAGNAROK_ENABLED_TEXT_DESC:0 "Korea is locked into the democratic Kim Gu route to prevent early conquests of France or Italy. On 1 January 1938, every other country in the world will unite in a single faction and declare war on Korea.\n\n§RWarning!§! Hearts of Korea Extreme: RagnaROK is intended for experienced players seeking a tougher challenge. For an even harder game, select Elite difficulty, strengthen every country except Korea, and enable the Super-China, Super-Finland and Improved East Siberian Supply options.\n\n"
  GOOKPPONG_STATUS:0 "Super-Korea"
  RULE_OPTION_DEFAULT_GOOKPPONG_DESC:0 "Do not enable Super-Korea."
