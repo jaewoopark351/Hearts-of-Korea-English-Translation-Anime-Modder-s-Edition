@@ -33,11 +33,11 @@ The local launcher configuration checked on 20 October has the standard HoK revi
 | --- | --- | --- |
 | A: standard English baseline | Current standard HoK revision and this translation; English language; Korean Language and the legacy translation disabled | Sampled English output confirmed; country-history follow-up below; introductory event overflow unresolved |
 | B: Korean Language comparison | Test A with Korean Language added before the two HoK entries | Mixed Korean and English reproduced; unsuitable for an English playthrough |
-| C: Road to 56 | The Road to 56, its HoK compatibility port and a separately reviewed English build; English language | Not tested in game; current standard build has static compatibility conflicts |
+| C: Road to 56 | The Road to 56 and its HoK compatibility port with built-in English; this standard translation disabled | RT56 port English checked statically; game display untested |
 
 The installed Korean Language mod supplies English-channel Korean text and overlaps 79 translation keys, including country, party and place names. It also supplies fonts and interface files. In Test B, the main menus and some map labels became Korean while the sampled HoK country, party and focus names remained English. This is an observed result for that configuration, not a claim that all 79 overlaps were individually checked or that every load order behaves identically. The original HoK descriptor's dependency is preserved.
 
-**Road to 56 requires separate compatibility work.** Its HoK port contains 27 keys absent from the standard source, and several shared state IDs refer to different places. For example, this translation names `STATE_1028` Hamgyeong, while the installed Road to 56 names it Dalarna. If this translation takes precedence, it can therefore rename unrelated regions. The RT56 dependency entry is retained, but this build should not be treated as a verified RT56 translation.
+**The HoK Road to 56 port now includes its own British English localisation.** Select English and use that built-in translation with The Road to 56; keep this standard-source translation submod disabled in that configuration. The RT56 port contains 27 keys absent from the standard source, and several shared state IDs refer to different places. For example, this translation names `STATE_1028` Hamgyeong, while Road to 56 uses it for Dalarna. The standard submod would therefore still risk renaming unrelated regions. The retained RT56 dependency entry does not establish compatibility. The [RT56 design record](docs/rt56-compatibility-design.md) distinguishes the earlier separate-build proposal from the port's integrated English.
 
 ### Country history and long events
 
@@ -65,7 +65,7 @@ d4031aaa0c1f85bb89b0e6ca21d041beade8bd26
 | Recorded result | Count |
 | --- | ---: |
 | English localisation files | 37 |
-| Keys matching the current Korean source | 2,971 |
+| Keys in the initial source comparison | 2,971 |
 | Previously missing keys added | 1,112 |
 | Existing translation values revised | 1,155 |
 | Existing values retained after review | 704 |
@@ -79,7 +79,7 @@ At the initial update stage, game display was untested. Later runs on HOI4 `1.19
 
 ### Release audit of 20 October 2026
 
-The local source still matches the commit above. The installed game's launcher metadata reports HOI4 `1.19.3.0`; the older `1.19.2` development records are not a test of this translation on the installed version.
+At the release-audit stage, the local source matched the commit above. The installed game's launcher metadata reports HOI4 `1.19.3.0`; the older `1.19.2` development records are not a test of this translation on the installed version.
 
 The audit corrected the current Workshop ID in this README. The project's `descriptor.mod` and the registered local `.mod` already contained the correct ID, `3823285419`, and were preserved. Public Steam metadata identifies the new item as an HOI4 mod; matching upload dates do not prove that published source files are identical to the local Git commit.
 
@@ -90,6 +90,24 @@ At the release-audit stage, game display checks could not proceed because the Wi
 One source inconsistency is preserved in `KOR_conquest_indu_desc`: its opening verse refers to the west, while its parenthetical explanation refers to the east. The translation retains both rather than choosing a direction without sufficient evidence.
 
 The later review compared all 2,971 Korean and English values and corrected 14 values in 10 files, including reinforcements described as volunteers, an ambiguous reference to communism, missing equipment wording and unclear policy descriptions. The subsequent country-history GUI change preserves those 37 localisation files and 2,971 keys. Unresolved source and script discrepancies are listed in the [source review notes](docs/source-review-notes.md). [Road to 56 support has a separate design](docs/rt56-compatibility-design.md); no RT56 build has been released by this work.
+
+### Emergency shipbuilding source update of 20 October 2026
+
+The source HEAD remains `d4031aaa0c1f85bb89b0e6ca21d041beade8bd26`, with local changes adding the Emergency Special Shipbuilding Programme and increasing Vision 1950 dockyard output from +20% to +30%. These working-tree changes are now included in the translation baseline; they are not part of that source commit.
+
+Added `localisation/english/HOK_KOR_emergency_shipbuilding_l_english.yml`, translating all four new decision and national-spirit strings from Korean. The description preserves the cost of 150 political power, 180-day duration, restriction while active, and unlimited reuse after expiry without an additional waiting period. Existing Vision 1950 text contains no fixed output percentage, so its generated +30% modifier needs no additional translation override.
+
+The current source and translation each contain **38 localisation files and 2,975 keys**. Existing Korean values are unchanged from the earlier baseline. Static checks pass for file/key correspondence, duplicate keys, UTF-8 BOM, English headers, versions, protected tokens and escaped line breaks. The earlier reviewed colour ordering and ordinary-language brackets are retained. The four new strings also received independent review against the Korean source and connected scripts.
+
+The game launched with English menus, but the new decision and national-spirit text remains NOT TESTED in the game: the temporary external startup fixture did not load. The original language and mod configuration were restored, and the temporary fixture was removed. Evidence is stored outside the mod in `C:\hoi\test\hok-english-translation-anime\20261020-source-update-01\`.
+
+### Alignment with the updated RT56 English wording
+
+Compared the current English and Korean files in `C:\hoi\hearts_of_korea_Road_to_56`, at HEAD `1cb07066bc929489293a21f9418f3d427cfab8a6` plus its local emergency-shipbuilding update. Of the common English values, 2,691 were already identical. The four emergency-shipbuilding strings use identical Korean in both variants and now match the port's reviewed British English, including **Launch the Emergency Special Shipbuilding Programme**. Their cost, duration and reuse conditions are unchanged.
+
+The remaining 25 common-value differences reflect different Korean text: 24 Manchurian descriptions contain RT56-specific target-state conditions, and the RagnaROK description omits options removed from the port. These differences are preserved, together with the 27 RT56-only keys and 255 standard-only keys. This project remains the standard-source translation with 38 files and 2,975 keys; the RT56 port has 37 files and 2,747 keys, including its four new shipbuilding strings.
+
+Static checks and independent review confirm the four adopted values, Korean correspondence, numbers, protected tokens, English header, BOM and file structure. This wording alignment has no new game-display test. Both source folders, existing unrelated translations and game settings are preserved. Comparison and validation evidence is in `C:\hoi\test\hok-english-translation-anime\20261020-rt56-wording-align-01\`.
 
 ## Project files
 
