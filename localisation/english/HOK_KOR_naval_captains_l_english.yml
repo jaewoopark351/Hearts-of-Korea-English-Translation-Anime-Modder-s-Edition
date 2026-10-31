@@ -1,0 +1,15 @@
+﻿l_english:
+#20261031_kpopmodder: Restore only missing native naval-captain UI text while preserving 1.19.3 placeholders and formatting.
+ CAPTAIN_TITLE_TEXT:0 "Captain"
+ SHIP_OFFICER_TITLE_SHIP_DEFAULT:0 "Captain"
+ WAS_IN_NAVAL_COMBAT_HISTORY:0 "$SUBJECT$ took part in the Battle of $PROVINCE$."
+ ASSIGN_CAPTAIN_MEDAL_TOOLTIP:0 "§H Grant Citation§!\n\nClick to award this ship's captain a citation for this action."
+ CAPTAIN_PROMOTED_HISTORY:0 "Captain $SUBJECT$ was promoted in $PROVINCE$."
+ BASE_CAPTAIN_MEDAL_TYPE:0 "Click to award this ship's captain the §H $TYPE$§! citation. If the captain is promoted to Admiral, their medals will be transferred with them."
+ CAPTAIN_EXPERIENCE_GAIN_TOOLTIP:0 "§HCaptain Experience Gain§!\nCaptain experience is gained at $MULT|%H$ of the usual rate.\n\nEach medal awarded to this ship increases the experience gain rate by $PER_MEDAL|%H$."
+ HIRED_NEW_ADMIRAL_TITLE:0 "Promote Captain"
+ HIRED_NEW_ADMIRAL_DESC:0 "Are you sure you want to promote $CHARACTER$ to Admiral?\n\nPromotion will reset this ship's experience and cost the following amount of Command Power:\n$COST|H$ £command_power."
+ UPGRADE_SHIP_CAPTAIN_BUTTON_TITLE:0 "§HPromote Captain§!\n\n"
+ CAPTAIN_PROMOTION_EXPERIENCE_PENALTY:0 "This ship's veterancy will be reduced by $RESULT|%H$."
+ submarine_officer:0 "Submarine Captain"
+ UNIT_LEADER_NEW_LEADER_CAPTAIN:0 "Show Ship Captains"

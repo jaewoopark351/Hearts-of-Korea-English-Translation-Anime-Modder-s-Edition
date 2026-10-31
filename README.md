@@ -54,6 +54,16 @@ The country-selection history panel now has a larger text area and a scrollbar. 
 - Preserve localisation keys and technical expressions, including variables, substitutions, colour codes, icons and escaped line breaks.
 - Check existing English against the current Korean text before reusing it. The source mod's `english` directory contains substantial Korean text and is not a complete English translation.
 
+## Update of 31 October 2026
+
+Updated against the standard Korean source at commit `07de265c1e992abb6584bdfcdf140320188c07f9`. This source update adds **6 localisation files and 73 keys**, with no changes to existing Korean values. All 73 new strings are translated and independently reviewed against the Korean and connected scripts: civilian nuclear research, military industrial organisation specialisations, naval captain UI, the Nagasaki raid, research facilities and Soyanggang Dam floodgate operations.
+
+The translation now has **44 English localisation files and 3,048 keys**, matching the standard Korean source. The existing 38 localisation files are unchanged. Checks passed for file/key correspondence, duplicate keys, English headers, UTF-8 BOM, versions, protected tokens and escaped line breaks. The raid's `10%p` experience reward is rendered as **10 percentage points**.
+
+The RT56 working-tree update was checked separately at HEAD `e871bd1246152c2d32f67c43181441ff31a706e7`. Its naval, air and nuclear research tooltips refer to different state IDs; the standard translation keeps its own IDs. This remains the standard-source submod, and neither source folder was modified.
+
+**The new English text has not been tested in the game.** Existing screen-test results above do not cover these additions. The [31 October update record](docs/2026-10-31-source-update.md) records terminology choices, an inherited captain-experience wording inconsistency and the remaining screen checks. Static evidence is stored in `C:\hoi\test\hok-english-translation-anime\20261031-source-update-01\`.
+
 ## Update of 20 October 2026
 
 This update was prepared against branch `feat/korean-focus-expansion-ai` in `C:\hoi\hearts_of_korea`, at source commit:
