@@ -119,6 +119,14 @@ The remaining 25 common-value differences reflect different Korean text: 24 Manc
 
 Static checks and independent review confirm the four adopted values, Korean correspondence, numbers, protected tokens, English header, BOM and file structure. This wording alignment has no new game-display test. Both source folders, existing unrelated translations and game settings are preserved. Comparison and validation evidence is in `C:\hoi\test\hok-english-translation-anime\20261020-rt56-wording-align-01\`.
 
+### Resource expansion source update of 7 November 2026
+
+Added the four British English strings for **Expand the Gangwon Coal Mines** and **Expand the Pohang Steelworks**, using the latest Korean source, including its uncommitted changes. Both descriptions retain the current narrative text; requirements and numerical effects remain in the game's generated tooltips. The existing 3,048 Korean values are unchanged from the previous baseline. Source and translation now each contain **45 localisation files and 3,052 keys**.
+
+Static checks and independent source review passed. An English run of the standard variant confirmed both decision titles and complete descriptions, together with the generated prerequisite and effect tooltips, without clipping in the tested window configuration. Decision execution and the focus reward window were not tested.
+
+The RT56 source was checked separately and already includes English for the same four new strings. Its state IDs and variant-specific text remain separate; this standard-source submod's RT56 compatibility status is unchanged. See the [source update and verification record](docs/2026-11-07-source-update.md).
+
 ## Project files
 
 ```text

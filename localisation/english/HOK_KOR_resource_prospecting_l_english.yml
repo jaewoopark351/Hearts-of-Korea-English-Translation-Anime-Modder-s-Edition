@@ -1,0 +1,8 @@
+﻿l_english:
+#20261107_kpopmodder: Keep the coal and steel decision descriptions to narrative background only.
+#20261107_kpopmodder: Explain the Pohang focus requirement and the subsequent repeatable steelworks expansion.
+#20261106_kpopmodder: Describe repeatable Korean coal and steel expansion with fixed costs, completion rewards and cancellation rules.
+ HOK_KOR_expand_gangwon_coal_mines:0 "Expand the Gangwon Coal Mines"
+ HOK_KOR_expand_gangwon_coal_mines_desc:0 "Even where coal seams have been identified, miners' pickaxes alone cannot increase output if there is insufficient equipment to bring the coal to the surface. We will widen the mine workings and improve drainage, ventilation and haulage equipment to expand the Gangwon coalfield's extraction capacity."
+ HOK_KOR_expand_pohang_steelworks:0 "Expand the Pohang Steelworks"
+ HOK_KOR_expand_pohang_steelworks_desc:0 "The establishment of the Pohang Iron and Steel Company has laid the foundations for producing our own steel. To meet growing industrial demand, we must now add blast furnaces and expand steelmaking and rolling facilities, while also improving the docks where raw materials are unloaded and the transport network. We will expand Pohang's production capacity to provide our factories and shipyards with a reliable supply of steel."
