@@ -1,0 +1,14 @@
+﻿l_english:
+#20261108_kpopmodder: Translate the twelve split-state names using established English regional naming.
+ HOK_KOR_STATE_1030:0 "Gyeongsangbuk"
+ HOK_KOR_STATE_1086:0 "Gyeongsangnam"
+ HOK_KOR_STATE_1031:0 "Chungcheongnam"
+ HOK_KOR_STATE_1087:0 "Chungcheongbuk"
+ HOK_KOR_STATE_1082:0 "Jeollabuk"
+ HOK_KOR_STATE_1088:0 "Jeollanam"
+ HOK_KOR_STATE_527:0 "Pyeongannam"
+ HOK_KOR_STATE_1089:0 "Pyeonganbuk"
+ HOK_KOR_STATE_1028:0 "Hamgyeongnam"
+ HOK_KOR_STATE_1090:0 "Hamgyeongbuk"
+ HOK_KOR_STATE_1083:0 "Hwanghaenam"
+ HOK_KOR_STATE_1091:0 "Hwanghaebuk"
