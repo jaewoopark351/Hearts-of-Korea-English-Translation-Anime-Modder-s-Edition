@@ -54,6 +54,12 @@ The country-selection history panel now has a larger text area and a scrollbar. 
 - Preserve localisation keys and technical expressions, including variables, substitutions, colour codes, icons and escaped line breaks.
 - Check existing English against the current Korean text before reusing it. The source mod's `english` directory contains substantial Korean text and is not a complete English translation.
 
+## Review of 9 November 2026
+
+The latest standard Korean source and this translation each contain **47 localisation files and 3,108 keys**. The 8 November commit already included 56 new strings for split-state names, national development projects and civic tooltips, plus five updated education, industrial investment and naval research descriptions. A fresh comparison against the Korean and connected scripts confirmed that coverage and corrected five wording details in two files, including regional scope and consistent place spelling.
+
+Static checks passed for file/key correspondence, duplicates, English headers, UTF-8 BOM, versions, protected tokens and escaped line breaks. **This review did not test the current text in the game.** The RT56 port already includes English for the new strings; its state IDs and variant-specific text remain separate. Use its built-in English with this standard submod disabled. The [latest source review](docs/2026-11-09-source-update.md) records the exact scope and a remaining source-side nuclear research place-name imprecision.
+
 ## Update of 31 October 2026
 
 Updated against the standard Korean source at commit `07de265c1e992abb6584bdfcdf140320188c07f9`. This source update adds **6 localisation files and 73 keys**, with no changes to existing Korean values. All 73 new strings are translated and independently reviewed against the Korean and connected scripts: civilian nuclear research, military industrial organisation specialisations, naval captain UI, the Nagasaki raid, research facilities and Soyanggang Dam floodgate operations.
