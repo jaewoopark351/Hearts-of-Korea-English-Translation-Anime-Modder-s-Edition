@@ -54,6 +54,12 @@ The country-selection history panel now has a larger text area and a scrollbar. 
 - Preserve localisation keys and technical expressions, including variables, substitutions, colour codes, icons and escaped line breaks.
 - Check existing English against the current Korean text before reusing it. The source mod's `english` directory contains substantial Korean text and is not a complete English translation.
 
+## Update of 14 November 2026
+
+The standard Korean source and this translation still contain **48 localisation files and 3,150 keys**. Removed the obsolete sentence promising Hong Beom-do, Kim Jwa-jin and Ahn Jung-geun at the start of Super-Korea; their military roles now unlock through **Prepare for the Next War** in new games. The rest of the option description and all other localisation files are preserved. The new automatic commander tooltips use existing English names.
+
+Coverage, encoding, syntax and protected-token checks passed, and the revised value matches the RT56 port's built-in English. Portrait, generated-name and news-trigger updates come from the base mod. **The current changes have not been tested in the game.** Continue using RT56's built-in English with this standard translation disabled. The [14 November update record](docs/2026-11-14-source-update.md) records the exact source versions, changes and remaining checks.
+
 ## Review of 11 November 2026
 
 The current standard Korean source and this translation each contain **48 localisation files and 3,150 keys**. The 36 new strings for American defence costs, stationing negotiations, dominion status and related events were already present in an uncommitted English file. Comparison with the Korean, connected scripts and an independent English review found no required corrections, so all localisation files were preserved byte for byte. The fission research bonus is generated from the source script and requires no additional translation.
