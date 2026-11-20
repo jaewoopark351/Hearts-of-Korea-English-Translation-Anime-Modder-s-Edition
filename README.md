@@ -54,6 +54,12 @@ The country-selection history panel now has a larger text area and a scrollbar. 
 - Preserve localisation keys and technical expressions, including variables, substitutions, colour codes, icons and escaped line breaks.
 - Check existing English against the current Korean text before reusing it. The source mod's `english` directory contains substantial Korean text and is not a complete English translation.
 
+## Update of 20 November 2026
+
+The standard Korean source and this translation now contain **51 localisation files and 3,170 keys**. Added 20 strings for repeatable support for Chinese and Japanese democrats, the Korean Secret Intelligence Service and the Free Republic of Shandong. Updated six existing focus descriptions and tooltips to match the current Korean, including support-based Japanese civil-war shares and Shandong's founding territory, military defections and Korean dominion status.
+
+All 26 values passed Korean-to-English comparison and an independent English review. Coverage, encoding, syntax and protected-token checks passed. A new standard English game confirmed sampled intelligence and Shandong text. At the configured 1280×720 resolution, the intelligence description's final line overlaps the Effect heading and the long Shandong tree tooltip clips; the Shandong detail window provides a working effect scrollbar. These display issues remain unresolved. The [20 November update record](docs/2026-11-20-source-update.md) records the exact scope and untested gameplay. RT56 already includes English for these additions; continue using its built-in English with this standard translation disabled. The standard source's faction invitation when Korea is not the faction leader remains a separate gameplay question, documented in the [source review notes](docs/source-review-notes.md).
+
 ## Update of 14 November 2026
 
 The standard Korean source and this translation still contain **48 localisation files and 3,150 keys**. Removed the obsolete sentence promising Hong Beom-do, Kim Jwa-jin and Ahn Jung-geun at the start of Super-Korea; their military roles now unlock through **Prepare for the Next War** in new games. The rest of the option description and all other localisation files are preserved. The new automatic commander tooltips use existing English names.

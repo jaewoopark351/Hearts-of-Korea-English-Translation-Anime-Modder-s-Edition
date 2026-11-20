@@ -1,0 +1,7 @@
+﻿l_english:
+#20261119_kpopmodder: Align the intelligence-service description with its shared military entry.
+#20261118_kpopmodder: Localise the Korean intelligence focus and permanent service without importing Britain's MI6 identity.
+ HOK_KOR_expand_secret_intelligence_service:0 "Expand the Secret Intelligence Service"
+ HOK_KOR_expand_secret_intelligence_service_desc:0 "We cannot understand the situation in Asia from diplomatic reports and newspaper articles alone. We must recruit contacts who know local conditions and establish specialist departments for codebreaking, communications interception and covert operations. Our government will consolidate its scattered intelligence activities in the Secret Intelligence Service, so that we can identify threats beyond our borders early and run a reliable overseas intelligence network."
+ HOK_KOR_secret_intelligence_service_idea:0 "Secret Intelligence Service"
+ HOK_KOR_secret_intelligence_service_idea_desc:0 "Reports from diplomatic missions and contacts abroad pass across the desks of translators and analysts before informing government decisions. The Secret Intelligence Service brings together technicians working with codes and communications, operatives familiar with local conditions and a network of contacts transporting supplies within a single organisation. We can now prepare dangerous operations more carefully and maintain uninterrupted contact with like-minded people overseas."
